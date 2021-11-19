@@ -117,7 +117,6 @@ class QrcodeReaderViewState extends State<QrcodeReaderView>
       color: Colors.white,
     );
     return Material(
-      color: Colors.black,
       child: LayoutBuilder(builder: (context, constraints) {
         final qrScanSize = constraints.maxWidth * widget.scanBoxRatio!;
         // ignore: unused_local_variable
@@ -138,8 +137,19 @@ class QrcodeReaderViewState extends State<QrcodeReaderView>
             ),
             if (widget.headerWidget != null) widget.headerWidget!,
             Positioned(
+              top: (constraints.maxHeight - qrScanSize) / 3 + 30,
+              width: constraints.maxWidth,
+              child: Align(
+                alignment: Alignment.center,
+                child: DefaultTextStyle(
+                  style: TextStyle(color: Colors.white),
+                  child: widget.helpWidget ?? Text("Quét mã QR của sản phẩm"),
+                ),
+              ),
+            ),
+            Positioned(
               left: (constraints.maxWidth - qrScanSize) / 2,
-              top: (constraints.maxHeight - qrScanSize) * 0.333333,
+              top: (constraints.maxHeight - qrScanSize) / 2,
               child: CustomPaint(
                 painter: QrScanBoxPainter(
                   boxLineColor: widget.boxLineColor!,
@@ -154,23 +164,19 @@ class QrcodeReaderViewState extends State<QrcodeReaderView>
               ),
             ),
             Positioned(
-              top: (constraints.maxHeight - qrScanSize) * 0.333333 +
-                  qrScanSize +
-                  24,
+              top: (constraints.maxHeight - qrScanSize) / 2 + qrScanSize + 10,
               width: constraints.maxWidth,
               child: Align(
                 alignment: Alignment.center,
                 child: DefaultTextStyle(
                   style: TextStyle(color: Colors.white),
-                  child: widget.helpWidget ?? Text("Quet san pham"),
+                  child: widget.helpWidget ??
+                      Text("Vui lòng căn mã vào giữa màn hình"),
                 ),
               ),
             ),
             Positioned(
-              top: (constraints.maxHeight - qrScanSize) * 0.333333 +
-                  qrScanSize -
-                  12 -
-                  35,
+              top: (constraints.maxHeight - qrScanSize) / 2 + qrScanSize + 40,
               width: constraints.maxWidth,
               child: Align(
                 alignment: Alignment.center,
@@ -252,7 +258,6 @@ class QrScanBoxPainter extends CustomPainter {
     canvas.clipRRect(
         BorderRadius.all(Radius.circular(12)).toRRect(Offset.zero & size));
 
-    // 绘制横向网格
     final linePaint = Paint();
     final lineSize = size.height * 0.45;
     final leftPress = (size.height + lineSize) * animationValue - lineSize;

@@ -34,14 +34,14 @@ class QrReaderView extends StatefulWidget {
   final double? width;
   final double? height;
 
-  const QrReaderView(
-      {Key? key,
-      required this.callback,
-      this.autoFocusIntervalInMs,
-      this.torchEnabled,
-      this.width,
-      this.height})
-      : super(key: key);
+  const QrReaderView({
+    Key? key,
+    required this.callback,
+    this.autoFocusIntervalInMs,
+    this.torchEnabled = true,
+    this.width = 500,
+    this.height = 500,
+  }) : super(key: key);
 
   @override
   _QrReaderViewState createState() => _QrReaderViewState();
@@ -83,7 +83,7 @@ class _QrReaderViewState extends State<QrReaderView> {
         ].toSet(),
       );
     } else {
-      return Text('平台暂不支持');
+      return Text('Lỗi');
     }
   }
 

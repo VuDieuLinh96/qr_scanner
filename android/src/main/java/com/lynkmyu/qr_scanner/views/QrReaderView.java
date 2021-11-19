@@ -35,7 +35,6 @@ public class QrReaderView implements PlatformView, QRCodeReaderView.OnQRCodeRead
         this.mParams = params;
         this.mRegistrar = registrar;
 
-        // 创建视图
         int width = (int) mParams.get("width");
         int height = (int) mParams.get("height");
         _view = new QRCodeReaderView(mContext);
@@ -44,11 +43,10 @@ public class QrReaderView implements PlatformView, QRCodeReaderView.OnQRCodeRead
         _view.setOnQRCodeReadListener(this);
         _view.setQRDecodingEnabled(true);
         _view.forceAutoFocus();
-        int interval = mParams.containsKey(EXTRA_FOCUS_INTERVAL) ? (int) mParams.get(EXTRA_FOCUS_INTERVAL) : 2000;
+        int interval = 2000;
         _view.setAutofocusInterval(interval);
-        _view.setTorchEnabled((boolean)mParams.get(EXTRA_TORCH_ENABLED));
+        _view.setTorchEnabled(true);
 
-        // 操作监听
         mMethodChannel = new MethodChannel(registrar.messenger(), "com.lynkmyu.qr_scanner.reader_view_" + id);
         mMethodChannel.setMethodCallHandler(this);
     }
