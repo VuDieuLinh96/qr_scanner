@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a4afe728-429c-4449-9865-8e73a369ea93" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/android/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/lynkmyu/qr_scanner/views/QrReaderView.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/lynkmyu/qr_scanner/views/QrReaderView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/qr_scanner/android/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/qr_scanner/android/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/qr_scanner/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/qr_scanner/android/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/qr_scanner/android/src/main/java/com/lynkmyu/qr_scanner/factorys/QrReaderFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/qr_scanner/android/src/main/java/com/lynkmyu/qr_scanner/factorys/QrReaderFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/qr_scanner/android/src/main/java/com/lynkmyu/qr_scanner/views/QrReaderView.java" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/qr_scanner/android/src/main/java/com/lynkmyu/qr_scanner/views/QrReaderView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qr_scanner.iml" beforeDir="false" afterPath="$PROJECT_DIR$/qr_scanner.iml" afterDir="false" />
-    </list>
+    <list default="true" id="a4afe728-429c-4449-9865-8e73a369ea93" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,22 +38,22 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1398" height="406" key="GridCell.Tab.0.bottom" timestamp="1637289427825">
+    <state width="1398" height="240" key="GridCell.Tab.0.bottom" timestamp="1637296693049">
       <screen x="0" y="25" width="1440" height="816" />
     </state>
-    <state width="1398" height="406" key="GridCell.Tab.0.bottom/0.25.1440.816/-1920.118.1920.1055@0.25.1440.816" timestamp="1637289427825" />
-    <state width="1398" height="406" key="GridCell.Tab.0.center" timestamp="1637289427824">
+    <state width="1398" height="240" key="GridCell.Tab.0.bottom/0.25.1440.816/-1920.118.1920.1055@0.25.1440.816" timestamp="1637296693049" />
+    <state width="1398" height="240" key="GridCell.Tab.0.center" timestamp="1637296693048">
       <screen x="0" y="25" width="1440" height="816" />
     </state>
-    <state width="1398" height="406" key="GridCell.Tab.0.center/0.25.1440.816/-1920.118.1920.1055@0.25.1440.816" timestamp="1637289427824" />
-    <state width="1398" height="406" key="GridCell.Tab.0.left" timestamp="1637289427824">
+    <state width="1398" height="240" key="GridCell.Tab.0.center/0.25.1440.816/-1920.118.1920.1055@0.25.1440.816" timestamp="1637296693048" />
+    <state width="1398" height="240" key="GridCell.Tab.0.left" timestamp="1637296693048">
       <screen x="0" y="25" width="1440" height="816" />
     </state>
-    <state width="1398" height="406" key="GridCell.Tab.0.left/0.25.1440.816/-1920.118.1920.1055@0.25.1440.816" timestamp="1637289427824" />
-    <state width="1398" height="406" key="GridCell.Tab.0.right" timestamp="1637289427825">
+    <state width="1398" height="240" key="GridCell.Tab.0.left/0.25.1440.816/-1920.118.1920.1055@0.25.1440.816" timestamp="1637296693048" />
+    <state width="1398" height="240" key="GridCell.Tab.0.right" timestamp="1637296693048">
       <screen x="0" y="25" width="1440" height="816" />
     </state>
-    <state width="1398" height="406" key="GridCell.Tab.0.right/0.25.1440.816/-1920.118.1920.1055@0.25.1440.816" timestamp="1637289427825" />
+    <state width="1398" height="240" key="GridCell.Tab.0.right/0.25.1440.816/-1920.118.1920.1055@0.25.1440.816" timestamp="1637296693048" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
